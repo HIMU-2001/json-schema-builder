@@ -3,7 +3,10 @@
 
 # 🧱 JSON Schema Builder 
 
+
 This is a frontend application built as part of the **HROne Frontend Intern Hiring Task**. The task was to build a dynamic and recursive **JSON Schema Builder** using React, Tailwind CSS, and ShadCN UI. The form logic is handled by `react-hook-form`.
+
+🚀 **[Live Demo](https://json-schema-builder-six.vercel.app)**  
 
 ---
 
@@ -30,11 +33,6 @@ The JSON Schema Builder allows users to:
 - ⚡ Built with **React**, **Vite**, **TailwindCSS**, and **ShadCN UI**
 - 🧠 Form state managed using **react-hook-form** for cleaner code and better performance
 
----
-
-## 📽️ Demo Preview
-
-> Not available in this repo, but functionality was built as described in the task video.
 
 ---
 
