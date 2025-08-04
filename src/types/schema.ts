@@ -4,5 +4,6 @@ export interface Field {
   id: string;
   name: string;
   type: FieldType;
+  include?: boolean;
   children?: Field[];
 }

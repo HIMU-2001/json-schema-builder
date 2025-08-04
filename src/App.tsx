@@ -2,16 +2,8 @@ import { useForm, FormProvider, useWatch } from 'react-hook-form';
 import { FieldBuilder } from './components/FieldBuilder';
 import { useEffect, useState } from 'react';
 import { Button } from './components/ui/button';
+import type { Field } from './types/schema';
 
-type FieldType = 'string' | 'number' | 'float' | 'boolean' | 'objectId' | 'nested';
-
-interface Field {
-  id: string;
-  name: string;
-  type: FieldType;
-  include?: boolean;
-  children?: Field[];
-}
 
 function generateSchema(fields: Field[] = []) {
   const schema: Record<string, any> = {};
@@ -22,7 +14,7 @@ function generateSchema(fields: Field[] = []) {
     if (field.type === 'nested') {
       schema[field.name || ''] = generateSchema(field.children || []);
     } else {
-      schema[field.name || ''] = field.type || 'string';
+      schema[field.name || ''] = field.type || '';
     }
   });
 
